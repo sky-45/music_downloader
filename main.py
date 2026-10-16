@@ -58,9 +58,9 @@ if __name__ == "__main__":
     SAVE_FOLDER = "music_downloads"
 
     # Option A: Local text file
-    # INPUT_TARGET = "songs.txt"
+    INPUT_TARGET = "songs.txt"
 
     # Option B: Spotify Playlist / Album / Track Link
-    INPUT_TARGET = "https://open.spotify.com/playlist/3OOPFGM0F1Xm6amiu2eCXE?si=cd8cb6346c5849d2"
+    # INPUT_TARGET = "https://open.spotify.com/playlist/5JKIEHTfrrFCY8qnFHILCo?si=UzyTz0saTj-qHhf4sm1XsQ&utm_source=whatsapp&pi=lH7WkNBTTU-2w"
 
     download_songs(target_input=INPUT_TARGET, output_folder=SAVE_FOLDER)
