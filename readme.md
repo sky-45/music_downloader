@@ -1,24 +1,29 @@
-# Spotify & Song List Music Downloader
 
-A tool to batch-download audio files as MP3s directly from Spotify playlist URLs or local plain-text song lists. Powered by [`spotDL`](https://github.com/spotDL/spotify-downloader), it automatically embeds track metadata, lyrics, and album cover art into the downloaded files.
+# Spotify & Song List Downloader
 
----
+Batch download MP3s with full metadata from Spotify URLs or a local text list using `spotDL`.
 
-## Features
+## Setup
 
-- **Multiple Input Types**: Download via Spotify URLs (playlists, albums, tracks) or local text files (`songs.txt`).
-- **Full Tagging**: Automatically embeds high-res album art, artist names, track titles, and album metadata.
-- **Custom Destination**: Downloads files directly into a structured local repository directory (e.g., `./music_downloads/`).
+```bash
+python3 -m pip install spotdl
+python3 -m spotdl --download-ffmpeg
 
----
+```
 
-## Prerequisites & Setup
+## Usage
 
-### 1. Requirements
-- **Python 3.10+** installed on your system.
+1. Open `main.py` and set `INPUT_TARGET`:
+   * **Spotify Link**: `"https://open.spotify.com/playlist/YOUR_ID"`
+   * **Text File**: `"songs.txt"` (one song title per line)
 
-### 2. Installation
 
-1. **Clone or download** this repository and navigate into the folder:
+2. Run:
    ```bash
-   cd ~/projects/music_downloader
+   python3 main.py
+
+   ```
+
+
+
+   Files save automatically to `./music_downloads/`.
